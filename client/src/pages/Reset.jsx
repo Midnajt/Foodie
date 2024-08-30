@@ -1,21 +1,20 @@
 import { Link } from "react-router-dom";
 import Wrapper from "../assets/wrappers/RegisterResetAndLoginPage";
-import { FormRow, SubmitBtn } from "../components";
+import { FormRow, Logo, SubmitBtn } from "../components";
 
 function Login() {
   return (
     <Wrapper>
-      <h2>Reset_page</h2>
       <form className='form'>
-        <h4>Login</h4>
+        <Logo />
+        <h4>Zresetuj hasło</h4>
+        <p>Proszę podać adres e-mail użyty podczas rejestracji. Otrzymasz wiadomość z dalszymi instrukcjami.</p>
         <FormRow type='email' name='email' />
-        <FormRow type='email' name='email' />
-        <FormRow type='password' name='password' />
         <SubmitBtn />
         <p>
-          Not a member yet?
+          Nie posiadasz konta?
           <Link to='/register' className='member-btn'>
-            Register
+            Rejestracja
           </Link>
         </p>
       </form>

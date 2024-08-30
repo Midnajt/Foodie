@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.section`
   min-height: 100vh;
@@ -22,6 +22,10 @@ const Wrapper = styled.section`
     text-align: center;
     line-height: 1.5;
   }
+  p:last-child() {
+    margin: 0;
+    border: 2px solid magenta;
+  }
   .btn {
     margin-top: 1rem;
   }
@@ -29,6 +33,14 @@ const Wrapper = styled.section`
     color: var(--primary-500);
     letter-spacing: var(--letter-spacing);
     margin-left: 0.25rem;
+  }
+  .resetPassword-btn {
+    color: var(--grey-400);
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: max-content;
+    text-align: center;
   }
 `;
 export default Wrapper;

@@ -1,20 +1,27 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Wrapper from "../assets/wrappers/RegisterResetAndLoginPage";
-import { FormRow, SubmitBtn } from "../components";
+import { FormRow, Logo, SubmitBtn } from "../components";
 import { toast } from "react-toastify";
 
 function Login() {
+  const navigate = useNavigate();
   const loginDemoUser = () => {
-    toast.success("Wypróbuj aplikację klik");
+    toast.success("Wypróbuj aplikację klik!");
   };
+
+  const submitHandler = () => {
+    navigate("/dashboard");
+  };
+
   return (
     <Wrapper>
-      <form className='form'>
+      <form className='form' onSubmit={submitHandler}>
+        <Logo />
         <h4>Login</h4>
         <FormRow type='email' name='email' />
-        <FormRow type='password' name='password' />
+        <FormRow type='password' name='hasło' />
         <SubmitBtn />
-        <button type='buttpm' className='btn btn-block' onClick={loginDemoUser}>
+        <button type='button' className='btn btn-block' onClick={loginDemoUser}>
           Wypróbuj aplikację
         </button>
         <p>
@@ -23,6 +30,9 @@ function Login() {
             Rejestracja
           </Link>
         </p>
+        <Link to='/reset' className='resetPassword-btn'>
+          Zresetuj hasło
+        </Link>
       </form>
     </Wrapper>
   );
