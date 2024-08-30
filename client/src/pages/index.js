@@ -11,3 +11,4 @@ export { default as Dishes } from "./Dishes";
 export { default as AddDish } from "./AddDish";
 export { default as EditDish } from "./EditDish";
 export { default as Profile } from "./Profile";
+export { default as Shopping } from "./Shopping";

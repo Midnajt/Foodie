@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.section`
   nav {
@@ -8,6 +8,11 @@ const Wrapper = styled.section`
     height: var(--nav-height);
     display: flex;
     align-items: center;
+  }
+
+  .logo {
+    display: block;
+    width: 64px;
   }
   .page {
     min-height: calc(100vh - var(--nav-height));
