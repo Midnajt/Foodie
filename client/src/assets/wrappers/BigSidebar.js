@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.aside`
   display: none;
@@ -25,6 +25,13 @@ const Wrapper = styled.aside`
       display: flex;
       align-items: center;
       padding-left: 2.5rem;
+
+      .logo {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1.38rem;
+        width: 64px;
+      }
     }
     .nav-links {
       padding-top: 2rem;

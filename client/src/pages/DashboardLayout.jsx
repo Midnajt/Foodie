@@ -2,6 +2,9 @@ import { Outlet, useLoaderData } from "react-router-dom";
 import { createContext, useContext, useState } from "react";
 import { checkDefaultTheme } from "../App";
 import Wrapper from "../assets/wrappers/Dashboard";
+import Navbar from "../components/Navbar";
+// import SmallSideBar from "../components/SmallSidebar";
+// import BigSidebar from "../components/BigSidebar";
 
 export const loader = async () => {
   console.log("dashboard loader");
@@ -36,11 +39,10 @@ function DashboardLayout() {
     <DashboardContext.Provider value={{ user, showSidebar, isDarkTheme, toggleDarkTheme, toggleSidebar, logoutUser }}>
       <Wrapper>
         <main className='dashboard'>
-          <p>smallSideBar</p>
-          <p>bigSideBar</p>
-
+          {/* <SmallSideBar /> */}
+          {/* <BigSidebar /> */}
           <div>
-            <p>navbar</p>
+            <Navbar />
             <div className='dashboard-page'>
               <Outlet context={{ user }} />
             </div>

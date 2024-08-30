@@ -12,7 +12,8 @@ const Wrapper = styled.section`
 
   .logo {
     display: block;
-    width: 64px;
+    margin: 0 auto;
+    margin-bottom: 1.38rem;
   }
   .page {
     min-height: calc(100vh - var(--nav-height));
