@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FormRow, SubmitBtn } from "../components";
-import Wrapper from "../assets/wrappers/RegisterAndLoginPage";
+import Wrapper from "../assets/wrappers/RegisterResetAndLoginPage";
 
 function Register() {
   return (

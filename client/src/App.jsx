@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { HomeLayout, Error, Landing, Register, Login, DashboardLayout } from "./pages";
+import { HomeLayout, Error, Landing, Register, Login, Reset, DashboardLayout, Welcome, Plan, Dishes, AddDish, EditDish, Shopping, Profile } from "./pages";
 import { loader as dashboardLoader } from "./pages/DashboardLayout";
 
 export const checkDefaultTheme = () => {
@@ -29,10 +29,43 @@ const router = createBrowserRouter([
         element: <Login />,
       },
       {
+        path: "reset",
+        element: <Reset />,
+      },
+      {
         path: "dashboard",
         element: <DashboardLayout />,
         loader: dashboardLoader,
-        // children: [],
+        children: [
+          {
+            index: true,
+            element: <Welcome />,
+          },
+          {
+            path: "plan",
+            element: <Plan />,
+          },
+          {
+            path: "dishes",
+            element: <Dishes />,
+          },
+          {
+            path: "addDish",
+            element: <AddDish />,
+          },
+          {
+            path: "editDish",
+            element: <EditDish />,
+          },
+          {
+            path: "shopping",
+            element: <Shopping />,
+          },
+          {
+            path: "profile",
+            element: <Profile />,
+          },
+        ],
       },
     ],
   },

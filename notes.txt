@@ -1,0 +1,14 @@
+🛠 Pages: {
+    ✔ Landing
+    ✔ Reset
+    ✔ Login
+    ✔ Register
+    ✔ Dashboard
+    ✔ Welcome
+    ✔ Plan
+    ✔ Dishes
+    ✔ AddDish
+    ✔ EditDish
+    ✔ Shopping
+    ✔ Profile
+}

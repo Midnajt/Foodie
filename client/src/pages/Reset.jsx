@@ -5,8 +5,10 @@ import { FormRow, SubmitBtn } from "../components";
 function Login() {
   return (
     <Wrapper>
+      <h2>Reset_page</h2>
       <form className='form'>
         <h4>Login</h4>
+        <FormRow type='email' name='email' />
         <FormRow type='email' name='email' />
         <FormRow type='password' name='password' />
         <SubmitBtn />

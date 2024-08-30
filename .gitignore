@@ -79,3 +79,7 @@ ehthumbs.db
 
 # Production
 /build
+/dist
+
+# other
+exaclidraw_project.png
